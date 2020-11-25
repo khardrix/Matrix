@@ -142,32 +142,59 @@ Matrix/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/build
 .PHONY : Matrix/fast
 
-main.obj: main.cpp.obj
+Matrix.obj: Matrix.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Matrix.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Matrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/Matrix.cpp.obj
+.PHONY : Matrix.cpp.obj
 
-main.i: main.cpp.i
+Matrix.i: Matrix.cpp.i
 
-.PHONY : main.i
+.PHONY : Matrix.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/main.cpp.i
-.PHONY : main.cpp.i
+Matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
 
-main.s: main.cpp.s
+Matrix.s: Matrix.cpp.s
 
-.PHONY : main.s
+.PHONY : Matrix.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/main.cpp.s
-.PHONY : main.cpp.s
+Matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
+MatrixTest.obj: MatrixTest.cpp.obj
+
+.PHONY : MatrixTest.obj
+
+# target to build an object file
+MatrixTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/MatrixTest.cpp.obj
+.PHONY : MatrixTest.cpp.obj
+
+MatrixTest.i: MatrixTest.cpp.i
+
+.PHONY : MatrixTest.i
+
+# target to preprocess a source file
+MatrixTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/MatrixTest.cpp.i
+.PHONY : MatrixTest.cpp.i
+
+MatrixTest.s: MatrixTest.cpp.s
+
+.PHONY : MatrixTest.s
+
+# target to generate assembly for a file
+MatrixTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/MatrixTest.cpp.s
+.PHONY : MatrixTest.cpp.s
 
 # Help Target
 help:
@@ -178,9 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Matrix
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Matrix.obj
+	@echo ... Matrix.i
+	@echo ... Matrix.s
+	@echo ... MatrixTest.obj
+	@echo ... MatrixTest.i
+	@echo ... MatrixTest.s
 .PHONY : help
 
 

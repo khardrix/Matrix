@@ -15,20 +15,20 @@ public:
         //TODO: initialize matrix
     }
 
-//    T[]& operator[](int index) {
-//        return values[index];
-//    }
-//    const T[]& operator[](int index) const {
-//        return values[index];
-//    }
+    T[]& operator[](int index) {
+        return values[index];
+    }
+    const T[]& operator[](int index) const {
+        return values[index];
+    }
 
-    Matrix<T,rows,cols> operator+(const Matrix<T,rows,cols> &rhs) const {
+    Matrix<T,rows,cols> operator+(Matrix<T,rows,cols> &rhs) {
         Matrix<T,rows,cols> result;
         //TODO: implement +
         return result;
     }
 
-    Matrix<T,rows,cols>& operator+=(const Matrix<T,rows,cols> &rhs) const {
+    Matrix<T,rows,cols>& operator+=(Matrix<T,rows,cols> &rhs) {
         //TODO: implement +=
         return this;
     }

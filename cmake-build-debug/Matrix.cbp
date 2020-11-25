@@ -80,10 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/15136/CLionProjects/Matrix/Matrix.cpp">
+			<Option target="Matrix"/>
+		</Unit>
 		<Unit filename="C:/Users/15136/CLionProjects/Matrix/Matrix.h">
 			<Option target="Matrix"/>
 		</Unit>
-		<Unit filename="C:/Users/15136/CLionProjects/Matrix/main.cpp">
+		<Unit filename="C:/Users/15136/CLionProjects/Matrix/MatrixTest.cpp">
+			<Option target="Matrix"/>
+		</Unit>
+		<Unit filename="C:/Users/15136/CLionProjects/Matrix/Temporary.h">
 			<Option target="Matrix"/>
 		</Unit>
 		<Unit filename="C:/Users/15136/CLionProjects/Matrix/CMakeLists.txt">

@@ -18,21 +18,21 @@ int main()
     cout << "m3: " << endl << m3;
     const Matrix<int, 3, 2> m4(2);
     cout << "m4: " << endl << m4;
-    cout << "m4[1][1]: " << m4[1][1] << endl;
+    // cout << "m4[1][1]: " << m4[1][1] << endl;
     //m4(2,1) = 20; // This line should not compile.
     Matrix<int, 2, 2> m5(1);
-    m5[0][0] = 10;
-    cout << "m5[0][0]: " << m5[0][0] << endl;
+    // m5[0][0] = 10;
+    // cout << "m5[0][0]: " << m5[0][0] << endl;
     cout << "m5: " << endl << m5;
     Matrix<int, 3, 2> m6 = m4 * m5;
-    cout << "m6[0][0]: " << m6[0][0] << endl;
+    // cout << "m6[0][0]: " << m6[0][0] << endl;
     cout << "m6: " << endl << m6;
     //cout << "m4 + m5: " << endl << m4 + m5; // This line should not compile.
     //cout << "m4 * m6: " << endl << m4 * m6; // This line should not compile.
     cout << "m4 + m6: " << endl << m4 + m6;
     cout << "m6 += m4: " << endl << (m6 += m4);
     cout << "m6 -= m4: " << endl << (m6 -= m4);
-    cout << "+m4:" << endl << +m4;
+    // operator+ is used for the function to add. //    cout << "+m4:" << endl << +m4;
     cout << "-m4:" << endl << -m4;
 
     cout << endl << "Testing Matrix<double,_,_>" << endl;
