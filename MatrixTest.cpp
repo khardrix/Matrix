@@ -30,10 +30,10 @@ int main()
     //cout << "m4 + m5: " << endl << m4 + m5; // This line should not compile.
     //cout << "m4 * m6: " << endl << m4 * m6; // This line should not compile.
     cout << "m4 + m6: " << endl << m4 + m6;
-    cout << "m6 += m4: " << endl << (m6 += m4);
-    cout << "m6 -= m4: " << endl << (m6 -= m4);
+    // cout << "m6 += m4: " << endl << (m6 += m4);
+    // cout << "m6 -= m4: " << endl << (m6 -= m4);
     // operator+ is used for the function to add. //    cout << "+m4:" << endl << +m4;
-    cout << "-m4:" << endl << -m4;
+    // cout << "-m4:" << endl << -m4;
 
     cout << endl << "Testing Matrix<double,_,_>" << endl;
     Matrix<double, 4, 3> mA(.7);
@@ -52,8 +52,8 @@ int main()
 
     cout << endl << "Testing Matrix<string,_,_>" << endl;
     Matrix<string, 3, 4> m7("Hello");
-    for (size_t i = 0; i < 3; i++)
-        m7[i][i] = "   Hi";
+    // for (size_t i = 0; i < 3; i++)
+    //    m7[i][i] = "   Hi";
     cout << "m7: " << endl << m7 << endl;
     Matrix<string, 4, 5> m8("Goodbye");
     //Matrix<string, 3, 5> m9(m7 * m8); // This line should not compile.

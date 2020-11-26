@@ -11,8 +11,30 @@ private:
     T values[rows][cols];
 
 public:
-    Matrix(const T & value = T()) {
-        //TODO: initialize matrix
+    T Arr[rows][cols];
+    Matrix(){
+        for(int i = 0; i < rows; i++){
+            for(int j = 0; j < cols;j++){
+                Arr[i][j] = 0;
+                std::cout  << Arr[i][j] << " ";
+            }
+            std::cout << std::endl;
+        }
+
+
+    }
+
+    Matrix(T a){
+        //std::cout << getName();
+        for(int i = 0; i < rows; i++){
+            for(int j = 0; j < cols;j++){
+                Arr[i][j] = a;
+                std::cout  << Arr[i][j] << " ";
+            }
+            std::cout << std::endl;
+        }
+
+
     }
 
 //    T[]& operator[](int index) {

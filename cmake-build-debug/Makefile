@@ -142,33 +142,6 @@ Matrix/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/build
 .PHONY : Matrix/fast
 
-Matrix.obj: Matrix.cpp.obj
-
-.PHONY : Matrix.obj
-
-# target to build an object file
-Matrix.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/Matrix.cpp.obj
-.PHONY : Matrix.cpp.obj
-
-Matrix.i: Matrix.cpp.i
-
-.PHONY : Matrix.i
-
-# target to preprocess a source file
-Matrix.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/Matrix.cpp.i
-.PHONY : Matrix.cpp.i
-
-Matrix.s: Matrix.cpp.s
-
-.PHONY : Matrix.s
-
-# target to generate assembly for a file
-Matrix.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Matrix.dir\build.make CMakeFiles/Matrix.dir/Matrix.cpp.s
-.PHONY : Matrix.cpp.s
-
 MatrixTest.obj: MatrixTest.cpp.obj
 
 .PHONY : MatrixTest.obj
@@ -205,9 +178,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Matrix
-	@echo ... Matrix.obj
-	@echo ... Matrix.i
-	@echo ... Matrix.s
 	@echo ... MatrixTest.obj
 	@echo ... MatrixTest.i
 	@echo ... MatrixTest.s

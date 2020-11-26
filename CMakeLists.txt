@@ -3,4 +3,4 @@ project(Matrix)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Matrix MatrixTest.cpp Matrix.cpp Temporary.h)
+add_executable(Matrix MatrixTest.cpp)

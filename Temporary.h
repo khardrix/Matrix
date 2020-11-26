@@ -1,4 +1,4 @@
-#ifndef MATRIX_MATRIX_H
+/*#ifndef MATRIX_MATRIX_H
 #define MATRIX_MATRIX_H
 
 #include <iostream>
@@ -48,3 +48,4 @@ ostream & operator<<(ostream & out, const Matrix<T, rows, cols> & m) {
 }
 
 #endif //MATRIX_MATRIX_H
+*/
