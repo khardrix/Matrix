@@ -7,10 +7,20 @@
 using namespace std;
 template<typename T, size_t rows, size_t cols>
 class Matrix {
-private:
-    vector<vector<T>> elts_;
+// private:
+    // vector<vector<T>> elts_;
 
 public:
+    vector<vector<T>> elts_;
+    Matrix(const T & values = T()) {
+        elts_.resize(rows);
+        for(size_t i = 0; i < rows; i++) {
+            elts_[i].resize[i].resize(cols, values);
+        }
+        std::cout << elts_;
+    }
+// public:
+    /*
     Matrix(const T & values = T()) {
         elts_.resize(rows);
         for (size_t i = 0; i < rows; i++){
@@ -20,6 +30,7 @@ public:
     }
     // friend ostream& operator<<(ostream& os, const T);
 };
+     */
     /*
     Matrix(){
         for(size_t i = 0;i < rows;i++){
@@ -140,3 +151,4 @@ ostream & operator<<(ostream & out, const Matrix<T, rows, cols> & m) {
 }
 */
 //MATRIX_MATRIX_H
+};

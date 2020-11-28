@@ -8,8 +8,8 @@ using namespace std;
 int main()
 {
     cout << "Testing Matrix<int,_,_>" << endl;
-    Matrix<int, 2, 5> m0;
-    cout << "m0: " << endl << m0;
+    // Matrix<int, 2, 5> m0;
+    // cout << "m0: " << endl << m0;
     // Matrix<int, 2, 2> m1(5);
     // cout << "m1: " << endl << m1;
     //Matrix<int, 2, 2> m2(3);
@@ -50,11 +50,11 @@ int main()
     //cout << "mE:" << endl << mE;
     //cout << "mD * mE:" << endl << (mD * mE);
 
-    cout << endl << "Testing Matrix<string,_,_>" << endl;
+    //cout << endl << "Testing Matrix<string,_,_>" << endl;
     //Matrix<string, 3, 4> m7("Hello");
     //for (size_t i = 0; i < 3; i++)
     //    m7[i][i] = "   Hi";
     //cout << "m7: " << endl << m7 << endl;
-    Matrix<string, 4, 5> m8("Goodbye");
+    //Matrix<string, 4, 5> m8("Goodbye");
     //Matrix<string, 3, 5> m9(m7 * m8); // This line should not compile.
 }
