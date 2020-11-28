@@ -49,3 +49,25 @@ ostream & operator<<(ostream & out, const Matrix<T, rows, cols> & m) {
 
 #endif //MATRIX_MATRIX_H
 */
+/*
+#ifndef MATRIX_MATRIX_H
+#define MATRIX_MATRIX_H
+
+#include <iostream>
+#include <vector>
+
+
+using namespace std;
+template<typename T, size_t rows, size_t cols>
+class Matrix {
+public:
+    Matrix(const T & value = T()) {
+        for(int i = 0; i < rows; i++)
+    }
+
+
+};
+
+
+#endif //MATRIX_MATRIX_H
+ */

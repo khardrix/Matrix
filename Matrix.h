@@ -2,7 +2,76 @@
 #define MATRIX_MATRIX_H
 
 #include <iostream>
+#include <vector>
 
+using namespace std;
+template<typename T, size_t rows, size_t cols>
+class Matrix {
+private:
+    vector<vector<T>> elts_;
+
+public:
+    Matrix(const T & value = T()) {
+        elts_.resize(rows);
+        for (size_t i = 0; i < rows; i++){
+            elts_[i].resize(cols, value);
+            std::cout << elts_[i] << " ";
+        }
+    }
+};
+    /*
+    Matrix(){
+        for(size_t i = 0;i < rows;i++){
+            elts_.push_back(std::vector<T>());
+            for(size_t j = 0; j < cols;j++){
+                elts_[i].push_back(0);
+                std::cout << elts_[i][j] << " ";
+
+            }
+            std::cout << std::endl;
+        }
+
+    }
+
+};
+*/
+    /*
+     * It should be much like the constructor from MatrixOfDouble:
+
+MatrixOfDouble(size_t numRows, size_t numCols, double value) {
+    elts_.resize(numRows);
+    for (size_t i = 0; i < numRows; i++)
+        elts_[i].resize(numCols, value);
+}
+
+The main difference is that numRows and numCols are not provided as typical parameters.
+     I.e. they are not listed inside the parentheses.
+     Instead, the number of rows and columns are passed as template parameters to the class:
+
+template<typename T, size_t rows, size_t cols>
+class Matrix {
+
+So every time that you need to access the number of rows, use the template parameter ‘rows’.
+     Similarly, use ‘cols’ when you need the number of columns.
+
+Otherwise, the body of the Matrix class template constructor is line-for-line the same as
+     the MatrixOfDouble constructor.
+
+
+     */
+#endif //MATRIX_MATRIX_H
+
+
+/*
+ * MatrixOfDouble(size_t numRows, size_t numCols, double value) {
+    elts_.resize(numRows);
+    for (size_t i = 0; i < numRows; i++)
+        elts_[i].resize(numCols, value);
+}
+ */
+
+
+/*
 using namespace std;
 
 template<typename T, size_t rows, size_t cols>
@@ -68,5 +137,5 @@ ostream & operator<<(ostream & out, const Matrix<T, rows, cols> & m) {
     //TODO: implement output operator
     return out;
 }
-
-#endif //MATRIX_MATRIX_H
+*/
+//MATRIX_MATRIX_H
