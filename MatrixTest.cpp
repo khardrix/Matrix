@@ -10,8 +10,8 @@ int main()
     cout << "Testing Matrix<int,_,_>" << endl;
     Matrix<int, 2, 5> m0;
     cout << "m0: " << endl << m0;
-    //Matrix<int, 2, 2> m1(5);
-    //cout << "m1: " << endl << m1;
+    // Matrix<int, 2, 2> m1(5);
+    // cout << "m1: " << endl << m1;
     //Matrix<int, 2, 2> m2(3);
     //cout << "m2: " << endl << m2;
     //Matrix<int, 2, 2> m3(m1 * m2);

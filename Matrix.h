@@ -11,13 +11,14 @@ private:
     vector<vector<T>> elts_;
 
 public:
-    Matrix(const T & value = T()) {
+    Matrix(const T & values = T()) {
         elts_.resize(rows);
         for (size_t i = 0; i < rows; i++){
-            elts_[i].resize(cols, value);
-            std::cout << elts_[i] << " ";
+            elts_[i].resize(cols, values);
         }
+        return values;
     }
+    // friend ostream& operator<<(ostream& os, const T);
 };
     /*
     Matrix(){
